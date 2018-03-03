@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.txt_no = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,6 +35,7 @@ Partial Class Form1
         '
         'txt_no
         '
+        Me.txt_no.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_no.Location = New System.Drawing.Point(95, 12)
         Me.txt_no.Name = "txt_no"
         Me.txt_no.Size = New System.Drawing.Size(60, 20)
@@ -59,6 +61,7 @@ Partial Class Form1
         '
         'txt_nama
         '
+        Me.txt_nama.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txt_nama.Location = New System.Drawing.Point(95, 38)
         Me.txt_nama.Name = "txt_nama"
         Me.txt_nama.Size = New System.Drawing.Size(133, 20)
@@ -66,44 +69,57 @@ Partial Class Form1
         '
         'ListBox1
         '
+        Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(95, 139)
+        Me.ListBox1.Location = New System.Drawing.Point(95, 109)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.Size = New System.Drawing.Size(219, 158)
         Me.ListBox1.TabIndex = 4
         '
         'btn_simpan
         '
-        Me.btn_simpan.Location = New System.Drawing.Point(113, 64)
+        Me.btn_simpan.BackgroundImage = CType(resources.GetObject("btn_simpan.BackgroundImage"), System.Drawing.Image)
+        Me.btn_simpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_simpan.ForeColor = System.Drawing.SystemColors.Control
+        Me.btn_simpan.Location = New System.Drawing.Point(110, 64)
         Me.btn_simpan.Name = "btn_simpan"
-        Me.btn_simpan.Size = New System.Drawing.Size(75, 23)
+        Me.btn_simpan.Size = New System.Drawing.Size(45, 39)
         Me.btn_simpan.TabIndex = 5
-        Me.btn_simpan.Text = "Simpan"
         Me.btn_simpan.UseVisualStyleBackColor = True
         '
         'btn_tampil
         '
-        Me.btn_tampil.Location = New System.Drawing.Point(113, 250)
+        Me.btn_tampil.BackgroundImage = CType(resources.GetObject("btn_tampil.BackgroundImage"), System.Drawing.Image)
+        Me.btn_tampil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_tampil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_tampil.ForeColor = System.Drawing.SystemColors.Control
+        Me.btn_tampil.Location = New System.Drawing.Point(183, 64)
         Me.btn_tampil.Name = "btn_tampil"
-        Me.btn_tampil.Size = New System.Drawing.Size(75, 23)
+        Me.btn_tampil.Size = New System.Drawing.Size(45, 39)
         Me.btn_tampil.TabIndex = 6
-        Me.btn_tampil.Text = "Tampil"
         Me.btn_tampil.UseVisualStyleBackColor = True
         '
         'btn_clr
         '
-        Me.btn_clr.Location = New System.Drawing.Point(10, 250)
+        Me.btn_clr.BackColor = System.Drawing.Color.Transparent
+        Me.btn_clr.BackgroundImage = CType(resources.GetObject("btn_clr.BackgroundImage"), System.Drawing.Image)
+        Me.btn_clr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_clr.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_clr.ForeColor = System.Drawing.SystemColors.Control
+        Me.btn_clr.Location = New System.Drawing.Point(193, 273)
         Me.btn_clr.Name = "btn_clr"
-        Me.btn_clr.Size = New System.Drawing.Size(75, 23)
+        Me.btn_clr.Size = New System.Drawing.Size(61, 39)
         Me.btn_clr.TabIndex = 7
-        Me.btn_clr.Text = "Clear"
-        Me.btn_clr.UseVisualStyleBackColor = True
+        Me.btn_clr.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btn_clr.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.btn_clr.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(304, 305)
+        Me.ClientSize = New System.Drawing.Size(341, 323)
         Me.Controls.Add(Me.btn_clr)
         Me.Controls.Add(Me.btn_tampil)
         Me.Controls.Add(Me.btn_simpan)
@@ -113,7 +129,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_no)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Tugas Array"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
