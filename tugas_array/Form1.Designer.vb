@@ -36,7 +36,7 @@ Partial Class Form1
         'txt_no
         '
         Me.txt_no.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_no.Location = New System.Drawing.Point(95, 12)
+        Me.txt_no.Location = New System.Drawing.Point(57, 11)
         Me.txt_no.Name = "txt_no"
         Me.txt_no.Size = New System.Drawing.Size(60, 20)
         Me.txt_no.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(50, 15)
+        Me.Label1.Location = New System.Drawing.Point(12, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(50, 41)
+        Me.Label2.Location = New System.Drawing.Point(12, 40)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 3
@@ -62,7 +62,7 @@ Partial Class Form1
         'txt_nama
         '
         Me.txt_nama.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txt_nama.Location = New System.Drawing.Point(95, 38)
+        Me.txt_nama.Location = New System.Drawing.Point(57, 37)
         Me.txt_nama.Name = "txt_nama"
         Me.txt_nama.Size = New System.Drawing.Size(133, 20)
         Me.txt_nama.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class Form1
         '
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(95, 109)
+        Me.ListBox1.Location = New System.Drawing.Point(57, 108)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(219, 158)
         Me.ListBox1.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class Form1
         Me.btn_simpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_simpan.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_simpan.Location = New System.Drawing.Point(110, 64)
+        Me.btn_simpan.Location = New System.Drawing.Point(72, 63)
         Me.btn_simpan.Name = "btn_simpan"
         Me.btn_simpan.Size = New System.Drawing.Size(45, 39)
         Me.btn_simpan.TabIndex = 5
@@ -94,7 +94,7 @@ Partial Class Form1
         Me.btn_tampil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_tampil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_tampil.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_tampil.Location = New System.Drawing.Point(183, 64)
+        Me.btn_tampil.Location = New System.Drawing.Point(145, 63)
         Me.btn_tampil.Name = "btn_tampil"
         Me.btn_tampil.Size = New System.Drawing.Size(45, 39)
         Me.btn_tampil.TabIndex = 6
@@ -107,7 +107,7 @@ Partial Class Form1
         Me.btn_clr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_clr.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clr.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_clr.Location = New System.Drawing.Point(193, 273)
+        Me.btn_clr.Location = New System.Drawing.Point(155, 272)
         Me.btn_clr.Name = "btn_clr"
         Me.btn_clr.Size = New System.Drawing.Size(61, 39)
         Me.btn_clr.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(341, 323)
+        Me.ClientSize = New System.Drawing.Size(338, 323)
         Me.Controls.Add(Me.btn_clr)
         Me.Controls.Add(Me.btn_tampil)
         Me.Controls.Add(Me.btn_simpan)
@@ -138,9 +138,9 @@ Partial Class Form1
     Friend WithEvents txt_no As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txt_nama As TextBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents btn_simpan As Button
     Friend WithEvents btn_tampil As Button
     Friend WithEvents btn_clr As Button
+    Friend WithEvents txt_nama As TextBox
 End Class
