@@ -31,6 +31,10 @@ Partial Class Form1
         Me.btn_simpan = New System.Windows.Forms.Button()
         Me.btn_tampil = New System.Windows.Forms.Button()
         Me.btn_clr = New System.Windows.Forms.Button()
+        Me.check_kecil = New System.Windows.Forms.CheckBox()
+        Me.check_besar = New System.Windows.Forms.CheckBox()
+        Me.TextBox_cari = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txt_no
@@ -82,7 +86,7 @@ Partial Class Form1
         Me.btn_simpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_simpan.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_simpan.Location = New System.Drawing.Point(72, 63)
+        Me.btn_simpan.Location = New System.Drawing.Point(57, 63)
         Me.btn_simpan.Name = "btn_simpan"
         Me.btn_simpan.Size = New System.Drawing.Size(45, 39)
         Me.btn_simpan.TabIndex = 5
@@ -115,11 +119,52 @@ Partial Class Form1
         Me.btn_clr.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.btn_clr.UseVisualStyleBackColor = False
         '
+        'check_kecil
+        '
+        Me.check_kecil.AutoSize = True
+        Me.check_kecil.Location = New System.Drawing.Point(298, 108)
+        Me.check_kecil.Name = "check_kecil"
+        Me.check_kecil.Size = New System.Drawing.Size(85, 17)
+        Me.check_kecil.TabIndex = 8
+        Me.check_kecil.Text = "Kecil - Besar"
+        Me.check_kecil.UseVisualStyleBackColor = True
+        '
+        'check_besar
+        '
+        Me.check_besar.AutoSize = True
+        Me.check_besar.Location = New System.Drawing.Point(298, 131)
+        Me.check_besar.Name = "check_besar"
+        Me.check_besar.Size = New System.Drawing.Size(85, 17)
+        Me.check_besar.TabIndex = 9
+        Me.check_besar.Text = "Besar - Kecil"
+        Me.check_besar.UseVisualStyleBackColor = True
+        '
+        'TextBox_cari
+        '
+        Me.TextBox_cari.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox_cari.Location = New System.Drawing.Point(264, 14)
+        Me.TextBox_cari.Name = "TextBox_cari"
+        Me.TextBox_cari.Size = New System.Drawing.Size(60, 20)
+        Me.TextBox_cari.TabIndex = 10
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(249, 54)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(338, 323)
+        Me.ClientSize = New System.Drawing.Size(400, 325)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox_cari)
+        Me.Controls.Add(Me.check_besar)
+        Me.Controls.Add(Me.check_kecil)
         Me.Controls.Add(Me.btn_clr)
         Me.Controls.Add(Me.btn_tampil)
         Me.Controls.Add(Me.btn_simpan)
@@ -143,4 +188,8 @@ Partial Class Form1
     Friend WithEvents btn_tampil As Button
     Friend WithEvents btn_clr As Button
     Friend WithEvents txt_nama As TextBox
+    Friend WithEvents check_kecil As CheckBox
+    Friend WithEvents check_besar As CheckBox
+    Friend WithEvents TextBox_cari As TextBox
+    Friend WithEvents Button1 As Button
 End Class
