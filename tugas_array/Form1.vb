@@ -99,11 +99,13 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        For n As Integer = 0 To 5
+        Dim myindex As Integer = Array.BinarySearch(nama, TextBox_cari.Text)
+        If myindex < 0 Then
+            MsgBox("Data tidak ditemukan", MsgBoxStyle.Critical)
+        Else
             ListBox1.Items.Clear()
-            If nama(n) = TextBox_cari.Text Then
-                ListBox1.Items.Add(no(n) & " " & nama(n))
-            End If
-        Next
+            ListBox1.Items.Add(no(myindex) & " " & nama(myindex))
+        End If
+
     End Sub
 End Class

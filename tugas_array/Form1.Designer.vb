@@ -35,6 +35,7 @@ Partial Class Form1
         Me.check_besar = New System.Windows.Forms.CheckBox()
         Me.TextBox_cari = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txt_no
@@ -75,7 +76,7 @@ Partial Class Form1
         '
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(57, 108)
+        Me.ListBox1.Location = New System.Drawing.Point(57, 199)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(219, 158)
         Me.ListBox1.TabIndex = 4
@@ -98,7 +99,7 @@ Partial Class Form1
         Me.btn_tampil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_tampil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_tampil.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_tampil.Location = New System.Drawing.Point(145, 63)
+        Me.btn_tampil.Location = New System.Drawing.Point(231, 154)
         Me.btn_tampil.Name = "btn_tampil"
         Me.btn_tampil.Size = New System.Drawing.Size(45, 39)
         Me.btn_tampil.TabIndex = 6
@@ -111,7 +112,7 @@ Partial Class Form1
         Me.btn_clr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_clr.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_clr.ForeColor = System.Drawing.SystemColors.Control
-        Me.btn_clr.Location = New System.Drawing.Point(155, 272)
+        Me.btn_clr.Location = New System.Drawing.Point(155, 363)
         Me.btn_clr.Name = "btn_clr"
         Me.btn_clr.Size = New System.Drawing.Size(61, 39)
         Me.btn_clr.TabIndex = 7
@@ -122,7 +123,7 @@ Partial Class Form1
         'check_kecil
         '
         Me.check_kecil.AutoSize = True
-        Me.check_kecil.Location = New System.Drawing.Point(298, 108)
+        Me.check_kecil.Location = New System.Drawing.Point(298, 199)
         Me.check_kecil.Name = "check_kecil"
         Me.check_kecil.Size = New System.Drawing.Size(85, 17)
         Me.check_kecil.TabIndex = 8
@@ -132,7 +133,7 @@ Partial Class Form1
         'check_besar
         '
         Me.check_besar.AutoSize = True
-        Me.check_besar.Location = New System.Drawing.Point(298, 131)
+        Me.check_besar.Location = New System.Drawing.Point(298, 222)
         Me.check_besar.Name = "check_besar"
         Me.check_besar.Size = New System.Drawing.Size(85, 17)
         Me.check_besar.TabIndex = 9
@@ -142,25 +143,38 @@ Partial Class Form1
         'TextBox_cari
         '
         Me.TextBox_cari.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox_cari.Location = New System.Drawing.Point(264, 14)
+        Me.TextBox_cari.Location = New System.Drawing.Point(76, 165)
         Me.TextBox_cari.Name = "TextBox_cari"
-        Me.TextBox_cari.Size = New System.Drawing.Size(60, 20)
+        Me.TextBox_cari.Size = New System.Drawing.Size(73, 20)
         Me.TextBox_cari.TabIndex = 10
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(249, 54)
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button1.Location = New System.Drawing.Point(155, 161)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(31, 24)
         Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(2, 167)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(70, 13)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Cari by Nama"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(400, 325)
+        Me.ClientSize = New System.Drawing.Size(400, 409)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox_cari)
         Me.Controls.Add(Me.check_besar)
@@ -192,4 +206,5 @@ Partial Class Form1
     Friend WithEvents check_besar As CheckBox
     Friend WithEvents TextBox_cari As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label3 As Label
 End Class
